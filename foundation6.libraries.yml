@@ -6,6 +6,6 @@ global-styling:
   js:
     theme:
       js/bundle.js: {}
+      js/init.js: {}
   dependencies:
     - core/jquery
-    
