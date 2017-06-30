@@ -30,11 +30,9 @@
   set classes = [
     'block',
     'block-search',
-'container-inline',
-    'small-12'
+'container-inline'
   ]
 %}
-<div class="row">
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -44,5 +42,4 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-</div>
 </div>

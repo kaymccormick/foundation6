@@ -32,8 +32,6 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div class="rows">
-  <div class="small-12">
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -43,6 +41,4 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-</div>
-  </div>
 </div>

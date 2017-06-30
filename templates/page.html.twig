@@ -60,21 +60,18 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content row">
-      <div class="small-12">
-	{{ page.content }}
-     </div>
-    </div>{# /.layout-content row #}
-
-    {% if page.sidebar_first %}
     <div class="row">
-      <div class="small-12">
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+      <div class="small-3 columns">
+    {% if page.sidebar_first %}
+    {{ page.sidebar_first }}
+    {% endif %}
+      </div>
+      <div class="small-9 columns">
+	<div class="layout-content">
+	  {{ page.content }}
+	</div>{# /.layout-content #}
       </div>
     </div>
-    {% endif %}
 
       {% if page.sidebar_second %}
     <div class="row">
