@@ -4,8 +4,7 @@ global-styling:
     theme:
       css/app.css: {}
   js:
-    theme:
-      js/bundle.js: {}
-      js/init.js: {}
+    js/fonts.js: {}
+    js/bundle.js: {}
   dependencies:
     - core/jquery

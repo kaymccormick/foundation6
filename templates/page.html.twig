@@ -43,35 +43,32 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+{{ page.header }}
 
-  {% if page.intermediate %}
-  <div class="row column">
-    {{ page.intermediate }}
+{% if page.intermediate %}
+  <div class="row">
+    <div class="small-12 medium-9 large-6 columns">
+      {{ page.intermediate }}
+    </div>
   </div>
-  {% endif %}
+{% endif %}
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+{{ page.primary_menu }}
+{{ page.secondary_menu }}
 
-  {{ page.breadcrumb }}
+{{ page.breadcrumb }}
 
-  {{ page.highlighted }}
+{{ page.highlighted }}
 
-  {{ page.help }}
+{{ page.help }}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
     <div class="row">
       <div class="small-12 medium-9 columns">
-	<div class="layout-content">
-	  {{ page.content }}
-	</div>{# /.layout-content #}
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    {{ page.content }}
       </div>
       <div class="small-12 medium-3 columns">
     {% if page.sidebar_first %}
@@ -88,9 +85,16 @@
       </aside>
       </div>
     </div>
+    </main>
     {% endif %}
 
-  </main>
+
+
+
+
+
+
+
 
   {% if page.footer %}
     <footer role="contentinfo">

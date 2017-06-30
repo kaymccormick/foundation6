@@ -34,8 +34,7 @@
  */
 #}
 {% if links %}
- <ul class="node__links menu">
-   {%- set attributes = attributes.addClass('menu') %}
+  <div class="node__links">
     {% include "links.html.twig" %}
-  </li>
+  </div>
 {% endif %}
