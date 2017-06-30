@@ -14,17 +14,19 @@
  */
 #}
 {% block content %}
-  {% if site_logo %}
+{% if site_logo %}
+  <li class="site-logo-menuitem menu-text">
     <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo">
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
+  </li>
   {% endif %}
   {% if site_name %}
-    <div class="site-name">
+    <li class="site-name menu-text" >
       <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
-    </div>
+    </li>
   {% endif %}
   {% if site_slogan %}
-    <div class="site-slogan">{{ site_slogan }}</div>
+    <li class="site-slogan menu-text">{{ site_slogan }}</div>
   {% endif %}
 {% endblock %}
