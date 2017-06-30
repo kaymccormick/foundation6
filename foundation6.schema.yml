@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Stark theme.
+
+foundation6.settings:
+  type: theme_settings
+  label: 'Foundation6 settings'

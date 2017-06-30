@@ -3,7 +3,7 @@ type: theme
 description: 'A foundation6 theme.'
 core: 8.x
 libraries:
-  - fluffiness/global-styling
+  - foundation6/global-styling
 base theme: classy
 regions:
   header: Header
