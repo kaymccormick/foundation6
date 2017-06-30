@@ -61,15 +61,15 @@
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="row">
-      <div class="small-3 columns">
-    {% if page.sidebar_first %}
-    {{ page.sidebar_first }}
-    {% endif %}
-      </div>
-      <div class="small-9 columns">
+      <div class="small-12 medium-9 columns">
 	<div class="layout-content">
 	  {{ page.content }}
 	</div>{# /.layout-content #}
+      </div>
+      <div class="small-12 medium-3 columns">
+    {% if page.sidebar_first %}
+    {{ page.sidebar_first }}
+    {% endif %}
       </div>
     </div>
 
