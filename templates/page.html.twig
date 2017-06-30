@@ -61,22 +61,29 @@
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content row">
-      {% if page.sidebar_first %}
-      <div class="large-3 show-for-large">
+      <div class="small-12">
+	{{ page.content }}
+     </div>
+    </div>{# /.layout-content row #}
+
+    {% if page.sidebar_first %}
+    <div class="row">
+      <div class="small-12">
       <aside class="layout-sidebar-first" role="complementary">
         {{ page.sidebar_first }}
       </aside>
-      {% endif %}
       </div>
-      <div class="small-12 large-9">
-	{{ page.content }}
-     </div>
-    </div>{# /.layout-content #}
+    </div>
+    {% endif %}
 
-    {% if page.sidebar_second %}
+      {% if page.sidebar_second %}
+    <div class="row">
+      <div class="small-12">
       <aside class="layout-sidebar-second" role="complementary">
         {{ page.sidebar_second }}
       </aside>
+      </div>
+    </div>
     {% endif %}
 
   </main>
