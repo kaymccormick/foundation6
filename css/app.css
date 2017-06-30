@@ -4146,3 +4146,6 @@ a.thumbnail {
   .node-readmore a:hover, .node-readmore a:focus {
     background-color: #14679e;
     color: #fefefe; }
+
+h2 > a > span.field--name-title {
+  font-size: 20; }
