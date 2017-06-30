@@ -81,8 +81,10 @@
   ]
 %}
 {{ attach_library('classy/node') }}
+<div class="small-12 medium-6 large-3">
 <article{{ attributes.addClass(classes) }}>
-  <div class="callout">
+  <div class="card">
+  <div class="card-label">
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -90,6 +92,7 @@
     </h2>
   {% endif %}
   {{ title_suffix }}
+  </div>
 
   {% if display_submitted %}
     <footer class="node__meta">
@@ -101,8 +104,11 @@
     </footer>
   {% endif %}
 
+    <div class="card-section">
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
   </div>
+  </div>
  </div>
 </article>
+</div>
