@@ -7,6 +7,9 @@ libraries:
 base theme: classy
 regions:
   header: Header
+  top_bar_title: 'Top bar title'
+  top_bar_left: 'Top bar left'
+  top_bar_right: 'Top bar right'
   intermediate: 'Intermediate section'
   content: Content
   sidebar_first: 'Sidebar first'
